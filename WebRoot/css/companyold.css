@@ -1,0 +1,314 @@
+@CHARSET "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+ul,li,ol{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+.clears{
+	clear:both;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+
+img{/*IE兼容问题*/
+	border:0;
+}
+/*---------widfloat------------*/
+.widfloat{
+	width: 60px;
+	border: 1px solid #d9d9d9;
+	position: fixed;
+	top: 150px;
+	right: 0px;
+}
+.widfloat a{
+	display:inline-block;
+	width: 60px;
+	height: 60px;
+	background:url(../images/static/consult.gif) teal;
+	text-align: center;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	display: table-cell;
+	vertical-align: bottom;
+}
+.widfloat a:HOVER{
+	background:url(../images/static/consultclo.gif) teal;
+	color: #ffffff;
+}
+.widfloat>a:HOVER{
+	background:url(../images/static/consultclo.gif) teal;
+}
+
+/*--------------*/
+.comtitle,.banner_score,.case,.evaluates{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.comtitle{
+	height: 100px;
+}
+.com_logo{
+	width: 120px;
+	height: 120px;
+	position: relative;
+	top: 25px;
+	float: left;
+	box-shadow: 0px -2px 3px #ececec;
+}
+.comtitle_txt{
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.com_name{
+	font-size: 32px;
+	font-family:"黑体";
+}
+.reptn{
+	display:inline-block;
+	font-size: 14px;
+	color: #949494;
+	border-left: 1px solid #eeeeee;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+.authentica{
+	margin-top: 5px;
+}
+.authentica>img{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+.nav{
+	height: 45px;
+	background-color: #1c1c1c;
+
+}
+.nav>a{
+	display:inline-block;
+	color: #f3f3f3;
+	line-height: 45px;
+	font-size: 16px;
+	font-family:"黑体";
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.nav>a:HOVER {
+	background-color: #6a6a6a;
+}
+
+
+/*----------横幅与评分------------------*/
+.banner_score{
+	margin-top: 15px;
+}
+.banner{
+	width: 50%;
+	height: 250px;
+	overflow: hidden;
+	float: left;
+}
+.banner p{
+	position: relative;
+	top: -25px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.banner a{
+	display:inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: #01af63;
+	border-radius: 10px;
+	opacity: 0.4;
+}
+#bannerbod{
+	width: 2000px;
+	position: relative;
+	left: 0px;
+	transition:all 0.5s;
+}
+#point1{
+	opacity: 1;
+}
+.banner img{
+	width: 500px;
+	height: 250px;
+	float: left;
+}
+.evaluateAndScore{
+	margin-top: 20px;
+	margin-left: 40px;
+	height: 250px;
+	overflow: hidden;
+}
+.evaluateAndScore,.evaluate,.score{
+	float: left;
+}
+.evaluate p,.score p{
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 5px;
+}
+.evaluateAndScore ul li a{
+	display:inline-block;
+	font-size: 14px;
+	color: #999;
+	margin-top: 10px;
+}
+.evaluate{
+	border-right: 1px solid #ccc;
+	padding-right: 100px;
+}
+.score{
+	margin-left: 100px;
+}
+.score span{
+	display:inline-block;
+	color: #f58520;
+	width: 70px;
+}
+.evaluate span{
+	color: #f58520;
+}
+.brief{
+	margin-top: 20px;
+	width: 440px;
+	height: 60px;
+	overflow: hidden;
+}
+.brief>p{
+	height: 18px;
+	font-size: 18px;
+	font-family: "黑体";
+	margin-bottom: 2px;
+	color: #444;
+}
+.brief div{
+	/*
+	text-overflow: ellipsis  ;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp:2;
+	*/
+	font-family: "Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 20px;
+	color: #888;
+	height: 40px;
+}
+.brief div a{
+	display:inline-block;
+	font-size: 14px;
+	line-height: 20px;
+	height: 20px;
+	color: #444;
+}
+.brief div a:HOVER {
+	color: #f58520;
+}
+.hotline{
+	font-size: 12px;
+	display:inline-block;
+	background-color: #f8f8f8;
+	margin-top: 10px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-overflow: ellipsis;
+	color: #888;
+}
+.hotline span{
+	color: #f58520;
+}
+.hotline a{
+	display:inline-block;
+	height: 100%;
+	background-color: #f58520;
+	color: #ffffff;
+	font-size: 16px;
+	width: 100px;
+	text-align: center;
+	margin-right: 10px;
+}
+.hotline a:HOVER{
+	background-color: #e6730b;
+}
+/*----------"case"---------*/
+.case{
+}
+.case>p,.evaluates>p{
+	font-size: 24px;
+	font-family: "Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+	margin-bottom: 15px;
+}
+.case>div{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.case>p>a,.evaluates>p>a{
+	display:inline-block;
+	font-size: 14px;
+	color: #888;
+	float: right;
+	margin-top: 5px;
+}
+.case>p>a,.evaluates>p>a:HOVER {
+	color: #f58520;
+}
+.case li{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+.case li>p{
+	background-color: #f5f5f5;
+	padding-top: 5px;
+	height: 30px;
+	line-height: 30px;
+}
+.case img{
+	width: 320px;
+	height: 320px;
+	
+}
+.home{
+	font-size: 14px;
+	color: #1f1f1f;
+	font-family: "宋体";
+}
+.priceandtime{
+	font-size: 14px;
+	color: #888;
+	font-family: "宋体";
+	margin-left: 15px;
+	border-left: 1px solid #888;
+	padding-left: 15px;
+}
+/*----------evaluate----dotted---------*/
+.evaluates{
+	height: 100px;
+}
+.evaluates>p{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}

@@ -1,0 +1,250 @@
+@CHARSET "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+ul,li,ol{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+.clears{
+	clear:both;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+
+img{/*IE兼容问题*/
+	border:0;
+}
+
+
+/*************横幅*************/
+.banner_img{
+	height:500px;
+	width:100%;
+}
+.banner{
+	min-width:1000px;
+	width:100%;
+	overflow:hidden;
+	height:500px;
+	position:relative}
+	
+.banList{
+	position:absolute;
+	width:100%;
+	/*left:50%;
+	margin-left:-960px;//683*/
+	height:500px;
+	}
+	
+.banList li{
+	height:500px;
+	width:100%;
+	opacity:0;
+	position:absolute;
+	transform:scale(0);
+	transition:transform 0.5s ease 0s, opacity 1.5s ease 0s;
+	z-index:1;}
+	
+.banList li.active{
+	opacity:1;
+	transform:scale(1);
+	z-index:2;}
+	
+.fomW{
+	position:absolute;
+	bottom:20px;
+	left:50%;
+	height:20px;
+	z-index:9;
+	width:1000px;
+	margin-left:-500px}
+	
+.jsNav{
+	text-align:center;}
+	
+.jsNav a{
+	display:inline-block;
+	background:rgba(1,175,99,0.3);
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	margin:0 5px;}
+	
+.jsNav a.current{
+	background:#01af63;
+	cursor:pointer}
+
+/*-------place----------*/
+.screen{
+	width: 1180px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding: 9px;
+	border: 1px solid #ececec;
+	background-color: #F9F9F9;
+	box-shadow: 2px 2px 3px #ececec;
+}
+.screen>span{
+	display:inline-block;
+	float: left;
+	color: #a5a5c0;
+}
+.place{
+	float: left;
+	width: 1125px;
+	border-bottom: 1px solid #ececec;
+	border-left: 1px solid #ececec;
+	padding-left: 5px;
+	margin-bottom: 5px
+}
+.Price{
+	float: left;
+	width: 1125px;
+	border-left: 1px solid #ececec;
+	padding-left: 5px;
+}
+.screen>div>a{
+	display:inline-block;
+	color: #a5a5c0;
+	margin-bottom: 8px;
+}
+.screen>div>a:HOVER{
+	color: #f25618;
+}
+
+/*---------公司列表---------*/
+.companys{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.company{
+	width: 1158px;
+	height: 202px;
+	padding: 20px;
+	background-color: #F9F9F9;
+	border: 1px solid #ececec;
+	box-shadow: 2px 2px 3px #ececec;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	transition-duration:0.2s;
+}
+.company:HOVER{
+	box-shadow: 5px 10px 10px #bfbfbf;
+}
+.home_logo{
+	width: 200px;
+	height: 200px;
+	border: 1px solid #ececec;
+	box-shadow: 2px 2px 3px #ececec;
+	float: left;
+}
+.company>div{
+	padding-left: 20px; 
+	float: left;
+}
+.company_name{
+	font-size: 36px;
+	margin-bottom: 5px;
+	color: #4c4c4c;
+	transition-duration:0.2s;
+}
+.company_name:HOVER{
+	color: #f5b50a;
+}
+.address{
+	font-size: 18px;
+	color: #a5a5c0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.authentica{
+	margin-top: 5px;
+}
+.authentica>img{
+	margin-right: 20px;
+	box-shadow: 2px 2px 3px #ececec;
+}
+
+.company>div>div{
+	float: left;
+}
+.serverNum>ul>li{
+	font-size: 14px;
+	float: left;
+	color: #57577d;
+	width: 130px;
+	margin-right: 120px;
+	margin-top: 16px;
+}
+.serverNum>ul>li>span{
+	color: f58520;
+}
+.company>div>div>p{
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #57577d;
+}
+.company>div>div>p>span{
+	font-size: 22px;
+	color: #f58520;
+}
+.company>div>div>a{
+	display:inline-block;
+	width: 130px;
+	height: 50px;
+	text-align:center;
+	line-height: 50px;
+	color: #ffffff;
+	background-color: #e7691e;
+	margin-top: 30px;
+	margin-left: 30px;
+	box-shadow: 2px 2px 3px #e0e0e0;
+}
+.company>div>div>a:HOVER {
+	background-color: #f5b50a;
+	box-shadow: 2px 2px 3px #bfbfbf;
+}
+.flip{
+	width: 220px;
+	margin-left: auto;;
+	margin-right: auto;
+}
+.flip>div{
+	width: 80px;
+	height: 40px;
+	background-color: #ffffff;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #ececec;
+	color: #a5a5c0;
+}
+.flip>a{
+	display:inline-block;
+	width: 80px;
+	height: 40px;
+	background-color: #ffffff;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #ececec;
+	color: #a5a5c0;/*#01af63;*/
+}
+.flip>a:HOVER {
+	background-color: 01af63;
+	border: 1px solid 01af63;
+	color: #ffffff;
+}

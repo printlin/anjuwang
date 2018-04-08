@@ -1,0 +1,154 @@
+@CHARSET "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+
+ul,li,ol{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+.clears{
+	clear:both;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+
+img{/*IE兼容问题*/
+	border:0;
+}
+/*----------head--------------*/
+.head,.head_body{
+	background-color: #F9F9F9;
+	height: 60px;
+	border-bottom: 1px solid  #ececec;
+}
+.head{
+}
+.head_body,.bottom_body{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.head_body{
+	text-align: center;
+}
+.logo{
+	width: 100px;
+	height: 50px;
+	margin-top:8px;
+	float: left;
+}
+.serch{
+	float: left;
+	margin-top: 15px;
+	margin-left: 150px;
+}
+.text,.submit{
+	height: 30px;
+}
+.text{
+	width: 250px;
+	border: 2px solid #01af63;
+}
+.submit{
+	width: 60px;
+	background-color: #01af63;
+	border: none;
+	color: #ffffff;
+}
+.body_right,.body_a{
+	color: #a5a5c0;
+	font-size: 20px;
+	height: 60px;
+}
+.body_right{
+	float: right;
+}
+.body_a{
+	line-height: 60px;
+	border-right: 1px solid #ececec;
+	padding-right: 10px;
+}
+.body_a:HOVER{
+	color: #f25618;
+}
+.head_img{
+	height: 40px;
+	width: 40px;
+	vertical-align: middle;
+	border-radius: 40px;
+}
+/*------companyhead------*/
+.comhead,.comheadbody{
+	background-color: #ffffff;
+	height: 30px;
+	border-bottom: 2px solid #01af63;
+}
+.comhead{
+	
+}
+.comheadbody{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.comheadbody>a>img{
+	width: 60px;
+	height: 30px;
+	vertical-align: middle;
+	margin-right: 4px;
+	border-radius: 26px;
+}
+.comhead_right{
+	float: right;
+	font-size: 12px;
+	color: #a5a5c0;
+}
+.comhead_right>a{
+	color: #a5a5c0;
+	line-height: 30px;
+	border-right: 1px solid #ececec;
+	padding-right: 15px;
+}
+.comhead_right>a:HOVER{
+	color: #f25618;
+}
+.comhead_img{
+	height: 26px;
+	width: 26px;
+	vertical-align: middle;
+	border-radius: 26px;
+}
+/*----------bottom--------------*/
+
+.bottom,.bottom_body{
+	background-color: #7d7d7d;
+}
+.bottom_body{
+	text-align: center;
+}
+.bottom_p{
+	display:inline-block;
+	margin-top: 12px;
+	height: 20px;
+	color: #f0f0f0;
+	font-size: 14px;
+}
+.bottom_a{
+	font-size: 18px;
+	color: #ffffff;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.bottom_a:HOVER{
+	color: #ff5;
+}
