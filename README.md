@@ -20,19 +20,19 @@
 ### 4、表单数据的自动封装
 ```Java
 public static <T> T requestToBean(HttpServletRequest request,Class<T> beanClass){
-		try{
-			T bean=beanClass.newInstance();
-			Enumeration<String> e=request.getParameterNames();
-			while(e.hasMoreElements()){
-				String name=(String)e.nextElement();
-				String value=request.getParameter(name);
-				BeanUtils.setProperty(bean, name, value);
-			}
-			return bean;
-		}catch(Exception e){
-			throw new RuntimeException(e);
+	try{
+		T bean=beanClass.newInstance();
+		Enumeration<String> e=request.getParameterNames();
+		while(e.hasMoreElements()){
+			String name=(String)e.nextElement();
+			String value=request.getParameter(name);
+			BeanUtils.setProperty(bean, name, value);
 		}
+		return bean;
+	}catch(Exception e){
+		throw new RuntimeException(e);
 	}
+}
 ```
 <br>
 
