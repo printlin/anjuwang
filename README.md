@@ -18,10 +18,10 @@
 ### 3、文件的上传
 >通过`org.apache.commons.fileupload`工具包来实现文件上传
 >>项目真实路径的获取
-  ```Java
-  ServletContext sctx = getServletContext();
-  String srPath=sctx.getRealPath(sctx.getContextPath());
-  ```
+    ```Java
+    ServletContext sctx = getServletContext();
+    String srPath=sctx.getRealPath(sctx.getContextPath());
+    ```
 >>上传文件格式的验证
 >>上传文件大小的验证
 >>上传进度的反馈
